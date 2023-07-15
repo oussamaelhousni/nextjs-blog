@@ -24,6 +24,7 @@ body {
 }
 
 .container {
+  padding: 0 1rem;
   max-width: 120rem;
   margin: 0 auto;
   min-height: 100vh;

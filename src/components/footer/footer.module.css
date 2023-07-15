@@ -4,3 +4,14 @@
   justify-content: space-between;
   height: 5rem;
 }
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  opacity: 0.8;
+}

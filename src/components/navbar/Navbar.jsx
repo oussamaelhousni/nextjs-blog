@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./navbar.module.css";
 const links = [
   {
     id: 1,
@@ -33,14 +34,17 @@ const links = [
 ];
 const Navbar = () => {
   return (
-    <header>
-      <Link href="/">Blog</Link>
-      <nav>
+    <header className={styles.header}>
+      <Link href="/" className={styles.logo}>
+        Blog
+      </Link>
+      <nav className={styles.links}>
         {links.map((link) => (
           <Link href={link.url} key={link.id}>
             {link.name}
           </Link>
         ))}
+        <button className={styles.button}>Logout</button>
       </nav>
     </header>
   );

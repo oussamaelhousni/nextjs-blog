@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./navbar.module.css";
+import DarkModeTogller from "../darkModeToggler/DarkModeTogller";
 const links = [
   {
     id: 1,
@@ -39,6 +40,7 @@ const Navbar = () => {
         Blog
       </Link>
       <nav className={styles.links}>
+        <DarkModeTogller />
         {links.map((link) => (
           <Link href={link.url} key={link.id}>
             {link.name}
